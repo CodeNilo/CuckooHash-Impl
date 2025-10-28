@@ -45,4 +45,14 @@ int firstHash(string word, int size){
             return hash % size;
         }
 
-// INTEGRANTE 4: Método de impresión
+void printTablaHash(){
+        for(int i = 0; i < HashTable_1.size(); i++){
+            cout << i << ")" <<HashTable_1[i] << "-";
+        }
+        cout << endl;
+        
+        for(int i = 0; i < HashTable_2.size(); i++){
+            cout << i << ")" <<HashTable_2[i] << "-";
+        }
+        cout << endl;
+    }
