@@ -22,7 +22,7 @@ class HashTable{
 
         void insertar(string palabra);
 
-        void CuckoHash(int indice, string palabra);
+        void CuckooHash(int indice, string palabra);
 
         void resizeHashTables();
 

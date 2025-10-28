@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    HashTable cucko(15);
+    HashTable cuckoo(15);
 
     vector<string> palabras = {
         "computadora",
@@ -29,8 +29,8 @@ int main(){
 
     for (auto &p : palabras){
         cout << "Insertando: " << p << endl;
-        cucko.insertar(p);
-        cucko.printTablaHash();
+        cuckoo.insertar(p);
+        cuckoo.printTablaHash();
         cout << "--------------------------" << endl;
     }
 

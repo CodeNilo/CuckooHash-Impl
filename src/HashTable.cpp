@@ -24,10 +24,10 @@ bool HashTable::estaVacio_Hashtable2(int pos) {
 
 void HashTable::insertar(string palabra){
     int indice = firstHash(palabra, tam);
-    CuckoHash(indice,palabra);
+    CuckooHash(indice,palabra);
 }
 
-void HashTable::CuckoHash(int indice, string palabra){
+void HashTable::CuckooHash(int indice, string palabra){
     if(estaVacio_Hashtable1(indice)){
         HashTable_1[indice] = palabra;
         return;
